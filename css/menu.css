@@ -1,0 +1,102 @@
+/* Estilos generales del header */
+header {
+    padding: 5px;
+    color: rgb(34, 33, 33);
+    text-align: center;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #d9dee2;
+    transition: left 0.3s ease;
+    z-index: 1;
+    top: 0;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Times New Roman;
+}
+
+/* Estilos para los enlaces del menú lateral */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul a {
+    display: block;
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    font-size: 18px;
+    color: rgb(14, 12, 12);
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(228, 217, 217, 0.1);
+    transition: .4s;
+    text-decoration: none;
+}
+
+
+
+/* Estilos al hacer hover en los elementos del menú */
+.sidebar ul li:hover a {
+    padding-left: 50px;
+    background: #908f96;
+    padding: 5px 0;
+    background-color: #aca6a6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center
+}
+/* Estilos base del submenú */
+.submenu {
+    display: none;
+    position: absolute;
+    /*centrar el menu */
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.menu-item:hover .submenu {
+    display: block;
+}
+/* Estilos para la imagen del icono */
+header img {
+    left: 260px;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* Estilos para centrar el contenido */
+.cabecera {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para mover el h1 a la izquierda */
+.move-left {
+    margin-left: -20px;
+}
+
+/* Contenedor principal */
+#container {
+    margin-left: 20px;
+}
