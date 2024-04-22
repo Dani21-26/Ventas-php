@@ -15,6 +15,7 @@ include "../config/db.php";
         }
     </script>
     <div class="container-fluid row">
+        <h1>Lista de Usuarios</h1>
         <form class="col-4 p-3" method="POST">
             <?php
             include "../config/db.php";
